@@ -3,6 +3,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import Todo from "./components/Todo";
 
+export interface ITodoProps {
+  key: number;
+  index: number;
+  todo: any;
+}
+
 export default () => {
   const [todos, setTodos] = useState([
     { text: "Learn about React" },
